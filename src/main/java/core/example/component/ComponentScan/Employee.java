@@ -1,13 +1,21 @@
 package core.example.component.ComponentScan;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Employee {
 
+    @Value("3681")
     private int employeeId;
+
+    @Value("Lukesh")
     private String firstname;
+
+    @Value("Gaydhane")
     private String lastname;
+
+    @Value("45000.0")
     private double salary;
 
     public int getEmployeeId() {
