@@ -10,8 +10,8 @@ public class Application {
 
         Employee employee = context.getBean("employee" , Employee.class);  // use this .class if you don't want to make use of cast...
         System.out.println(employee.toString());
-
         Manager  manager = context.getBean("manager", Manager.class);
         System.out.println(manager.toString());
     }
+
 }
